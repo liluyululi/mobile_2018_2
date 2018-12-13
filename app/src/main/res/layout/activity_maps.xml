@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E4C7"
+    tools:context=".MapsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ListView
+        android:id="@+id/namesv"
+        android:layout_width="186dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:onClick="mOnclick"
+        android:text="마커 추가"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Markname"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/Markname"
+        android:layout_width="187dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="고양이 이름"
+        android:inputType="textPersonName"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/markmake"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:onClick="mOnclick"
+        android:text="OK"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Markname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Markname"
+        app:layout_constraintTop_toTopOf="@+id/Markname" />
+
+    <ImageView
+        android:id="@+id/prevmark"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:alpha="0.5"
+        android:src="@drawable/basic_mark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintStart_toStartOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/map" />
+
+    <ListView
+        android:id="@+id/namesv2"
+        android:layout_width="186dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selbtn" />
+
+    <Button
+        android:id="@+id/delbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="마커 삭제"
+        android:onClick="mOnclick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/selbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="11dp"
+        android:onClick="mOnclick"
+        android:text="마커 선택"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/delbtn"
+        app:layout_constraintTop_toBottomOf="@+id/delbtn" />
+
+</android.support.constraint.ConstraintLayout>

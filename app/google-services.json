@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "303546058512",
+    "firebase_url": "https://mapuse-6040f.firebaseio.com",
+    "project_id": "mapuse-6040f",
+    "storage_bucket": "mapuse-6040f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303546058512:android:b52d30d842819ce2",
+        "android_client_info": {
+          "package_name": "com.example.bang.mapuse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303546058512-d8lih35gc3s5hlppfe811p6em1hpib1b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bang.mapuse",
+            "certificate_hash": "59140b8dc56011bd650d755774ba8827b4cf6601"
+          }
+        },
+        {
+          "client_id": "303546058512-m1r0s0htmpr87rabhvelfjgcv90j6082.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqYcUNY7Jb0b9gsfIh31T0N6tzMFIsKpE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303546058512-m1r0s0htmpr87rabhvelfjgcv90j6082.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
